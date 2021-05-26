@@ -1,0 +1,9 @@
+for i,v in pairs(game:GetService("Workspace").Map:GetDescendants()) do
+    if v.Name == "Treasure" then
+        wait(0.5)
+        local root = game.Players.LocalPlayer.Character.HumanoidRootPart
+        root.CFrame = CFrame.new(game:GetService("Workspace").Map.Treasures.Treasure.Position)
+        wait(0.5)
+        fireproximityprompt(game:GetService("Workspace").Map.Treasures.Treasure.ProximityPrompt)
+    end
+    end
