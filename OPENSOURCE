@@ -1,3 +1,4 @@
+while wait() do
 for i,v in pairs(game:GetService("Workspace").Map:GetDescendants()) do
     if v.Name == "Treasure" then
         wait(0.5)
@@ -5,5 +6,6 @@ for i,v in pairs(game:GetService("Workspace").Map:GetDescendants()) do
         root.CFrame = CFrame.new(game:GetService("Workspace").Map.Treasures.Treasure.Position)
         wait(0.5)
         fireproximityprompt(game:GetService("Workspace").Map.Treasures.Treasure.ProximityPrompt)
+        end
     end
-    end
+end
