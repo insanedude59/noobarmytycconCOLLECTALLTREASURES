@@ -1,11 +1,10 @@
-while wait() do
-for i,v in pairs(game:GetService("Workspace").Map:GetDescendants()) do
+while game:IsLoaded() do wait(0.2)
+    for i,v in pairs(game:GetService("Workspace").Map:GetDescendants()) do
     if v.Name == "Treasure" then
-        wait(0.5)
         local root = game.Players.LocalPlayer.Character.HumanoidRootPart
         root.CFrame = CFrame.new(game:GetService("Workspace").Map.Treasures.Treasure.Position)
-        wait(0.5)
+        wait(0.3)
         fireproximityprompt(game:GetService("Workspace").Map.Treasures.Treasure.ProximityPrompt)
-        end
     end
+end
 end
